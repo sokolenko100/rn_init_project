@@ -9,7 +9,8 @@ buildscript {
         supportLibVersion = "28.0.0"
     }
     repositories {
-        google()
+        maven { url "https://jitpack.io" } 
+        maven { url "https://maven.google.com" } 
         jcenter()
     }
     dependencies {
@@ -23,7 +24,8 @@ buildscript {
 allprojects {
     repositories {
         mavenLocal()
-        google()
+        maven { url "https://jitpack.io" } 
+        maven { url "https://maven.google.com" } 
         jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
